@@ -10,24 +10,24 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-        version = "0.11.0";
+        version = "0.11.1";
 
         sources = {
           x86_64-linux = {
             url = "https://github.com/openshift/backplane-cli/releases/download/v${version}/ocm-backplane_${version}_Linux_x86_64.tar.gz";
-            sha256 = "sha256-MB2mgyuVKzxSaOid/iUwdtnAgT+Rb/TYkphCSqj4MKI=";
+            sha256 = "sha256-h/wQdNLJtEV/EGT/q0BxK5upXosJKCMBfVNPcx8uq14=";
           };
           aarch64-linux = {
             url = "https://github.com/openshift/backplane-cli/releases/download/v${version}/ocm-backplane_${version}_Linux_arm64.tar.gz";
-            sha256 = "sha256-dtqhPbZ8rU0WqMgbX4TREzZGXFQ82NksEcVF0xv5xvo=";
+            sha256 = "sha256-X1YuB4y5q80NfuNw8t1iht721dZZV8nYaj3tqZahEvU=";
           };
           x86_64-darwin = {
             url = "https://github.com/openshift/backplane-cli/releases/download/v${version}/ocm-backplane_${version}_Darwin_x86_64.tar.gz";
-            sha256 = "sha256-xgN3lVsv5cA49S137nQbYehh/zDBnQcZZKwZxOL1Z9g=";
+            sha256 = "sha256-KZlLbecOZgnR1db1/KYhWZT7YCPoLawftWOvwMgxU8Q=";
           };
           aarch64-darwin = {
             url = "https://github.com/openshift/backplane-cli/releases/download/v${version}/ocm-backplane_${version}_Darwin_arm64.tar.gz";
-            sha256 = "sha256-ibbjb8nTxdSiCHaFYknpn95QojyKi4oYYt9g48a4mr8=";
+            sha256 = "sha256-e7ssBJ19KFxmsIBpi2ImzedW65iEyaeyJazt2+/e5AM=";
           };
         };
 
